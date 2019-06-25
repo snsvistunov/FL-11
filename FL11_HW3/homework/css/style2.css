@@ -1,0 +1,227 @@
+body {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #21232e; }
+
+P {
+  margin: 0;
+  padding: 0; }
+
+.header-wrap {
+  background: url("../img/m-h-night.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: calc(100vh);
+  padding-left: 130px;
+  padding-top: 20px;
+  border-bottom-right-radius: 43vw 43vh; }
+
+.header_heading {
+  margin-top: 20px;
+  padding-top: 40px;
+  color: white;
+  font-size: 60px;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 60px;
+  font-weight: bolder;
+  max-width: 40%;
+  line-height: 1em;
+  z-index: 2;
+  position: relative; }
+
+.header_heading::after {
+  content: '';
+  background-color: #ff4e33;
+  display: block;
+  height: 25px;
+  width: 55%;
+  z-index: -1;
+  position: absolute;
+  bottom: 0px; }
+
+.landing-logo {
+  display: inline; }
+  .landing-logo img {
+    float: left;
+    width: 37px;
+    height: auto; }
+  .landing-logo p {
+    font-size: 20px;
+    font-family: Fresca, sans-serif;
+    padding-left: 50px;
+    padding-top: 3px;
+    font-weight: bold;
+    line-height: 0.8em;
+    color: white; }
+    .landing-logo p span {
+      font-size: 9px;
+      width: 60px;
+      text-align: center;
+      display: grid;
+      color: white; }
+
+.header_text {
+  font-size: 13px;
+  font-family: Fresca, sans-serif;
+  white-space: pre-line;
+  max-width: 60%;
+  padding-top: 25px;
+  color: white; }
+
+.header_button, .section_banner_button {
+  width: 118px;
+  height: 41px;
+  padding: 10px;
+  background-color: #e3ac00;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 3px; }
+
+.header_button {
+  margin-top: 40px; }
+
+.section_card_wrap {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  max-width: 80%;
+  vertical-align: top; }
+
+.section_text {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  font-size: 40px;
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 600;
+  z-index: 2; }
+
+.section_text::after {
+  content: '';
+  background-color: #ff4e33;
+  display: block;
+  height: 12px;
+  width: 14%;
+  z-index: -1;
+  position: absolute;
+  right: 35%;
+  margin-top: -20px; }
+
+.section_card {
+  text-align: center;
+  background-color: #3b3f50;
+  border-radius: 3px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  max-width: 30%; }
+
+.section_card_img {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 250px;
+  height: 152px;
+  border-radius: 3px; }
+
+.section_card_text {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #c0c3ce;
+  font-size: 11px;
+  font-family: Fresca, sans-serif; }
+
+.section_card_heading {
+  color: white;
+  font-size: 16px;
+  font-family: Source Sans Pro, sans-serif;
+  color: #fff;
+  font-weight: 600;
+  z-index: 1;
+  display: inline-block; }
+  .section_card_heading .section_card_underline {
+    background-color: #ff4e33;
+    z-index: -1;
+    display: block;
+    height: 10px;
+    margin-top: -8px; }
+
+.section_banner {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  background: linear-gradient(to right, #dca008, #98364c);
+  border-radius: 4px;
+  margin-top: 50px;
+  max-height: 10%; }
+
+.section_banner_text_wrap {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 50px; }
+
+.section_banner_heading {
+  padding-top: 20px;
+  color: white;
+  font-size: 25px;
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 600; }
+
+.section_banner_text {
+  color: #c0c3ce;
+  font-size: 11px;
+  font-family: Fresca, sans-serif;
+  padding-top: 20px; }
+
+.section_banner_button {
+  margin-top: 5%;
+  position: relative;
+  left: 30%; }
+
+.footer-wrap {
+  background-color: #3b3f50;
+  display: flex;
+  z-index: -1;
+  margin-top: -80px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  vertical-align: top; }
+
+.footer_text {
+  width: 20%;
+  text-align: left;
+  font-size: 11px;
+  font-family: Fresca, sans-serif;
+  color: #c0c3ce;
+  position: relative;
+  left: 30%; }
+
+.footer_logo {
+  margin-left: 60px; }
+  .footer_logo p {
+    color: white; }
+    .footer_logo p span {
+      color: white; }
+
+.footer-cr {
+  font-size: 11px;
+  font-family: Fresca, sans-serif;
+  color: #c0c3ce;
+  position: relative;
+  left: 50%; }
