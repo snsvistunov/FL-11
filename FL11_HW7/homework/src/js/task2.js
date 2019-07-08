@@ -44,7 +44,6 @@ if (!start){
         }
         //'Round' roulette  
         roulettePocketNumber=Math.floor(minRange + Math.random() * (maxRange + 1 - minRange));
-        console.log(roulettePocketNumber);
         //User get's 3 attempts to guess number
         for (let i=0;i<countOfAttempts;i++){       
             leftAttempts=countOfAttempts-i;
