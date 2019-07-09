@@ -31,6 +31,7 @@ let winRatio=baseWinRatio;
 const halfDiv=2;
 const rangeStep=4;
 let playerWinRound=false;
+let currentPrize;
 //Play game
 let start=confirm(dialogMessages['entry_invitation']);
 if (!start){
@@ -56,7 +57,8 @@ if (!start){
             if(playerNumber===roulettePocketNumber){
                totalPrize+=prizes[i]*winRatio;
                playerWinRound=true;
-               continueGame=confirm(dialogMessages['guess_number_1']+prizes[i]*winRatio+dialogMessages['guess_number_2']);
+                currentPrize=prizes[i]*winRatio;
+               continueGame=confirm(dialogMessages['guess_number_1']+currentPrize+dialogMessages['guess_number_2']);
                break;
             }
         }
