@@ -36,12 +36,12 @@ let start=confirm(dialogMessages['entry_invitation']);
 if (!start){
     alert(dialogMessages['cancel_game']);
 } else{
-    while (continueGame){
-        //Initialize prizes array using winner ratio (x2 increase after each winning)  
-        prizes[0]=firstPrize*winRatio;
-        for (let i=1;i<countOfAttempts;i++){
+    //Initialize prizes array
+    prizes[0]=firstPrize;
+    for (let i=1;i<countOfAttempts;i++){
             prizes[i]=prizes[i-1]/halfDiv;
         }
+    while (continueGame){
         //'Round' roulette  
         roulettePocketNumber=Math.floor(minRange + Math.random() * (maxRange + 1 - minRange));
         //User get's 3 attempts to guess number
@@ -50,13 +50,13 @@ if (!start){
             showInfo='';
             showInfo+=dialogMessages['make_choose_1']+minRange+dialogMessages['make_choose_2']+maxRange+cr;
             showInfo+=dialogMessages['left_attempts']+leftAttempts+cr+dialogMessages['total_prize']+totalPrize+currency;
-            showInfo+=cr+dialogMessages['possible_prize']+prizes[i]+currency;
+            showInfo+=cr+dialogMessages['possible_prize']+prizes[i]*winRatio+currency;
             playerNumber=+prompt(showInfo);
         //If user are guessing
             if(playerNumber===roulettePocketNumber){
-               totalPrize+=prizes[i];
+               totalPrize+=prizes[i]*winRatio;
                playerWinRound=true;
-               continueGame=confirm(dialogMessages['guess_number_1']+prizes[i]+dialogMessages['guess_number_2']);
+               continueGame=confirm(dialogMessages['guess_number_1']+prizes[i]*winRatio+dialogMessages['guess_number_2']);
                break;
             }
         }
