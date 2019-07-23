@@ -1,0 +1,60 @@
+/* Your styles goes here */
+
+html, body div, span{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+    background: transparent;
+    color: #32b0fe;
+}
+
+article, aside, figure, footer, header, nav, section, details, summary {display: block;}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom:20px;
+}
+#add-new-item-text{
+    max-width: 80%;
+}
+#root{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#add-new-item-text{
+    width: 70%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+#submit-new-item{
+    color: white;
+    background-color: #c8d0d8;
+    text-align:center;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    font-size: 1.5rem;
+    width: 30px;
+    margin-top:10px;
+    margin-left: 4%;
+}
+hr {
+    border: 2px solid #E3F2FF;
+    border-radius: 10px;
+    margin: 3% 0;
+}
